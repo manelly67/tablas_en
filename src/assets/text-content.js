@@ -35,7 +35,7 @@ project1.projectDescription3_array = [
 project1.projectDescription4 =
   'Módulo Gestión Consolidada';
 project1.projectDescription4_array = [
-  'Requiere previamente de al menos módulo de venta y módulo de gastos.',
+  'Requiere previamente de, al menos, módulo de venta y módulo de gastos.',
   'Hoja formulada para reflejar el resultado de la gestión por mes y acumulado al año.',
 ];
 
