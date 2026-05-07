@@ -1,11 +1,13 @@
 import { Contenido } from "./class-content";
+import { name } from "./personalInfo";
+import { email } from "./personalInfo";
 
 const project1 = new Contenido('langES');
-project1.titleAbout = 'Hojas de cálculo para la gestión de pequeñas empresas';
+project1.titleAbout = 'Tablas para la gestión de pequeñas empresas';  // Hojas de cálculo
 project1.textContentAbout = 'Diseño de hojas de cálculo en Google Sheets con tablas dinámicas y estructuradas para generar consolidados automáticos por mes, año, categorías y parámetros varios.  Se implementan fórmulas avanzadas como QUERY, FILTER, INDEX, MATCH y VLOOKUP para extraer y consolidar datos complejos bajo solicitud específica, garantizando precisión y agilidad en el análisis.';
 project1.subtitle1 = 'Diseño estructurado mediante módulos';
-project1.headContactMe = '';
-project1.textContactMe = '';
+project1.headContactMe = 'Contáctame';
+project1.textContactMe = `Soy ${name}, si quieres un diseño para ti, ponte en contacto conmigo. Escribe directo al email`;
 project1.projectName = '';
 project1.projectDescription1 =
   'Módulo de Ventas';

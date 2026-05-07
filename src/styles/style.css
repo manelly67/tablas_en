@@ -1,23 +1,25 @@
 .light {
   --color-bg-first: #e9e7db;
-  --color-base-text: #57690b;     
-  --color-a-hover: #849E00;
+  --color-base-text: #57690b; 
+  --color-a-hover: #414e01;    
   --color-text-button: #e9e7db;
   --color-bg-button: transparent;
   --color-shadow: #443f31;
   --color-tag: #cd5454;
   --text-tag: #e9e7db;
+  --email-text-span: darkblue;
 }
 
 .dark {
   --color-bg-first: #263201;
-  --color-base-text: #e9e7db;
+  --color-base-text: #97968e;
   --color-a-hover: #849E00;
   --color-text-button: #e9e7db;
   --color-bg-button: #97968e;
   --color-shadow: #57690b;
   --color-tag: #97968e;
   --text-tag: #443f31;
+  --email-text-span: lightblue;
 }
 
 body {
@@ -52,6 +54,7 @@ h3 {
 }
 
 p {
+  font-size: 1.1rem;
   font-family: "Playfair Display", serif;
   font-weight: 300;
   font-style: normal;
@@ -81,19 +84,39 @@ section {
   text-align: center;
 }
 
-.divImgPhoto{
+.firstParr{
+  width: 60%;
+  max-width: 700px;
+  min-width: 260px;
+}
+
+.divImgPhoto, .divImgPhotoInFooter{
   width: 150px;     
   height: 150px;     
   border-radius: 50%; 
   overflow: hidden;  
 }
 
-.divImgPhoto > img {
+.divImgPhoto > img, .divImgPhotoInFooter > img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
+/* for display photo */
+@media screen and (max-width: 741px) {
+  .divImgPhoto {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 741px) {
+  .divImgPhotoInFooter {
+    display: none;
+  }
+}
+
+/* display setButtons*/
 @media screen and (max-width: 431px) {
   .setButtons {
     position: fixed;
@@ -110,13 +133,28 @@ section {
     margin-top: 5rem;
   }
 
-  .divImgPhoto {
-    display: none;
+
+}
+
+@media screen and (min-width: 431px) and (max-width: 900px) {
+  .setButtons {
+    position: absolute;
+    top: 1.5rem;
+    right: 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  section {
+    margin-top: 2rem;
   }
 
 }
 
-@media screen and (min-width: 431px) {
+@media screen and (min-width: 901px)  {
   .setButtons {
     position: fixed;
     top: 1.5rem;
@@ -133,6 +171,7 @@ section {
   }
 
 }
+
 
 /* toggle button */
 .toggle {
@@ -204,20 +243,19 @@ section > article > div > p {
 
 
 @media screen and (min-width: 981px) {
-
 .divForModules {
   width: 100%;
-  display: grid;
-  grid-template-rows: repeat(auto-fit, minmax(fit-content, 1fr));
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  row-gap: 40px;
-  column-gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.06rem;
+
   justify-content: center;
+  align-items: center;
 }
 
 .parrafos {
     --defining-width: calc(0.82 * (100vw / 2));
-    width: var(--defining-width);
+    flex: 1 1 var(--defining-width);
     height: fit-content;
     min-width: 300px;
     max-width: 350px;
@@ -225,30 +263,28 @@ section > article > div > p {
     box-shadow: var(--color-shadow) 2px 2px 4px 2px;
   }
 
-
 }
 
 @media screen and (min-width: 621px) and (max-width: 980px) {
 .divForModules {
-    width: 95%;
-    display: grid;
-    grid-template-rows: repeat(auto-fit, minmax(fit-content, 1fr));
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); 
-    row-gap: 40px;
-    column-gap: 20px;
-    justify-content: space-around;
-    align-items: center;
+  width: 95%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+
+  justify-content: center;
+  align-items: center;
 }
 
 .parrafos {
     --defining-width: calc(0.75 * (100vw / 2));
-    width: var(--defining-width);
+    flex: 1 1 var(--defining-width);
     height: fit-content;
     min-width: 300px;
     max-width: 450px;
     border-radius: 6px;
     box-shadow: var(--color-shadow) 2px 2px 4px 2px;
-}
+  }
 
 }
 
@@ -299,6 +335,12 @@ span {
   font-size: larger;
   font-weight: 700;
   margin-right: 15px;
+}
+
+.spanEmail {
+  font-size: large;
+  color: var(--email-text-span);
+  font-style: oblique;
 }
 
 .hook{
@@ -366,4 +408,46 @@ span {
   height: 30px;
   width: auto;
   object-fit: cover;
+}
+
+footer {
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 1%;
+  padding-bottom: 2%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+footer > section {
+  height: 100%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+footer > section > h2 {
+ padding: 1rem;
+ margin: 0 auto;
+}
+
+footer > section > p {
+ width: 60%;
+ min-width: 200px;
+ max-width: 300px;
+ margin: 0 auto;
+ text-align: justify;
+}
+
+footer > section > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
+  padding-top: 2rem;
 }
