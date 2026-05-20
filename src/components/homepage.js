@@ -1,6 +1,6 @@
 import photo_MN from "../assets/photo-footer.png";
 import { toggleButton } from "./toggleButton";
-import { content_ES } from "./content_ES";
+import { content_EN } from "./content_ES";
 import { insertImg } from "./insertImage";
 import { footerDiv } from "./footerDiv";
 
@@ -17,7 +17,7 @@ function homepage() {
   const main = document.createElement("main");
   const content = document.createElement("section");
 
-  content_ES(content);
+  content_EN(content);
 
   document.body.appendChild(main);
   main.appendChild(divButtons);

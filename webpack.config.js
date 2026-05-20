@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
+    mode: 'development',
     entry:  {
     index: './src/index.js',
   },
@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Maria Nelly Lopez diseño de hojas de cálculo de Google Drive',
+      title: 'Maria Nelly Lopez: Google Drive Spreadsheet Design',
     }),
   ],
   output: {

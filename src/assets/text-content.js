@@ -3,64 +3,64 @@ import { name } from "./personalInfo";
 import { email } from "./personalInfo";
 
 const project1 = new Contenido('langES');
-project1.titleAbout = 'Tablas para la gestión de pequeñas empresas';  // Hojas de cálculo
-project1.textContentAbout = 'Diseño de hojas de cálculo en Google Sheets con tablas dinámicas y estructuradas para generar consolidados automáticos por mes, año, categorías y parámetros varios.  Se implementan fórmulas avanzadas como QUERY, FILTER, INDEX, MATCH y VLOOKUP para extraer y consolidar datos complejos bajo solicitud específica, garantizando precisión y agilidad en el análisis.';
-project1.subtitle1 = 'Diseño estructurado mediante módulos';
-project1.headContactMe = 'Contáctame';
-project1.textContactMe = `Soy ${name}, si quieres un diseño para ti, ponte en contacto conmigo. Escribe directo al email`;
+project1.titleAbout = 'Tables for managing small businesses';  // Hojas de cálculo
+project1.textContentAbout = 'Design of spreadsheets in Google Sheets using dynamic and structured tables to generate automatic consolidations by month, year, category, and various parameters. Advanced formulas such as QUERY, FILTER, INDEX, MATCH, and VLOOKUP are implemented to extract and consolidate complex data based on specific requests, ensuring accuracy and efficiency in analysis.';
+project1.subtitle1 = 'Modular design';
+project1.headContactMe = 'Contact me';
+project1.textContactMe = `My name is ${name}, If you'd like a custom design, please contact me. Send me an email directly`;
 project1.projectName = '';
 project1.projectDescription1 =
-  'Módulo de Ventas';
+  'Sales Module';
 project1.projectDescription1_array = [
-  'Tabla base con lista de productos, precios, características.',
-  'Tabla de entrada de datos del detalle de las ventas.',
-  'Validación de datos y anexo para cuadre del día.',
-  'Informe consolidado por mes, por productos, por canal de venta y parámetros a solicitud.',
+  'Base table with a list of products, prices, and features.',
+  'Sales Details Data Entry Table.',
+  'Data validation and appendix for the daily reconciliation.',
+  'Consolidated report by month, by product, by sales channel, and by parameters as requested.',
 ];
 project1.projectDescription2 =
-  'Módulo de Gastos';
+  'Expense Module';
 project1.projectDescription2_array = [
-  'Tabla de entrada de datos del detalle de los gastos.',
-  'Tabla base con categorías de gastos.',
-  'Anexo para mano de obra.',
-  'Informe consolidado por mes, por categoría, por proveedor y parámetros a solicitud.',
+  'Data entry table for expense details.',
+  'Base table with expense categories.',
+  'Appendix on Labor.',
+  'Consolidated report by month, category, supplier, and custom parameters.',
 ];
 project1.projectDescription3 =
-  'Módulo de Costos';
+  'Cost Module';
 project1.projectDescription3_array = [
-  'Tabla base con precios unitarios de materiales.',
-  'Tablas integradas formuladas que permiten, en función de parámetros dados, calcular el costo de los materiales de cada producto y definir un precio sugerido de venta.',
-  'Generador del costo total de materia prima con base a los productos vendidos. (requiere tener el modulo de ventas)',
+  'Base table with unit prices for materials.',
+  'Built-in formula tables that allow you to calculate the cost of materials for each product based on specified parameters and set a suggested retail price.',
+  'Total raw material cost calculator based on products sold. (Requires the Sales module)',
 ];
 project1.projectDescription4 =
-  'Módulo Gestión Consolidada';
+  'Consolidated Management Module';
 project1.projectDescription4_array = [
-  'Requiere previamente de, al menos, módulo de venta y módulo de gastos.',
-  'Hoja formulada para reflejar el resultado de la gestión por mes y acumulado al año.',
+  'This requires at least the sales module and the expenses module to be installed beforehand.',
+  'A spreadsheet designed to display monthly and year-to-date management results.',
 ];
 
 project1.projectDescription5_array = [
-  'En todos los módulos, la información se actualiza automáticamente con cada entrada de datos.',
-  'Reutilizable para años subsiguientes.',
-  'Adaptado a las necesidades de cada cliente',
+  'In all modules, the information is automatically updated with each data entry.',
+  'Reusable for future years.',
+  "Tailored to each client's needs",
 ];
 
 project1.projectDescription6 =
-  'Dashboards y Scripts';
+  'Dashboards and Scripts';
 project1.projectDescription6_array = [
-  'Dashboard desde','por cuatro gráficos.',
-  'Scripts diseñados en Google Apps Script a solicitud, para tareas repetitivas o específicas, desde', 'dependiendo de la complejidad.',
+  'Dashboard from','with four charts.',
+  'Custom scripts written in Google Apps Script for repetitive or specific tasks, starting at', 'depending on the complexity.',
 ];
 
 project1.projectDescription7 =
-  'Apoyo Administrativo o de Mejoras';
+  'Administrative Support or Improvement Support';
 project1.projectDescription7_array = [
-  'Menos de 5 horas, a','c/u',
-  'Más de 5 horas en una semana a','c/u',
+  'less than 5 hours, at ','per hour',
+  'More than 5 hours in a week at','per hour',
 ];
 
 
-project1.language = 'español';
+project1.language = 'english';
 
 const arrayProjects = [
   project1

@@ -1,7 +1,7 @@
-repositorio que contiene página publicitaria en idioma español, para el diseño de hojas de cálculo personalizadas
+Repository containing an English-language advertising page for designing custom spreadsheets
 
-vista de la página 
+Page view 
 
-https://manelly67.github.io/tablas/
+https://manelly67.github.io/tablas_en/
 
 

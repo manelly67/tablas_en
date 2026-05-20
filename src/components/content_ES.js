@@ -1,7 +1,7 @@
 import { arrayProjects } from "../assets/text-content";
 import { description } from "./descriptionDiv";
 
-const content_ES = (arg) => {
+const content_EN = (arg) => {
   const content = document.createElement("article");
   const title = document.createElement("h1");
   title.textContent = arrayProjects[0]['titleAbout'];
@@ -41,4 +41,4 @@ const content_ES = (arg) => {
 
 }
 
-export { content_ES};
+export { content_EN};

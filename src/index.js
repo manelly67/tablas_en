@@ -15,7 +15,7 @@ const meta = document.createElement("meta");
 meta.setAttribute("name", "description");
 meta.setAttribute(
   "content",
-  "Maria Nelly Lopez diseño de hojas de cálculo de Google Drive"
+  "Maria Nelly Lopez: Google Drive Spreadsheet Design"
 );
 
 googleFonts();

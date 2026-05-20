@@ -18,7 +18,7 @@ function footerDiv(parentDiv) {
     contactMeText.textContent = arrayProjects[0].textContactMe;
     contactMeText.insertAdjacentHTML(
             "beforeend",
-            `<span class="spanEmail"> ${email} </span> <p> o por linkedin. </p>`,
+            `<span class="spanEmail"> ${email} </span> <p> or on LinkedIn. </p>`,
           );
 
      // icons

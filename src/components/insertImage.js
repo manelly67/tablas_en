@@ -14,22 +14,3 @@ function insertImg(parentDiv, source, altTxt, classImg, w, h) {
 }
 
 export { insertImg };
-
-/* function insertImg(parentDiv){
-  const mn_image = new Image();
-  mn_image.src = photo_footer;
-  const img = document.createElement("img");
-  img.setAttribute("src", mn_image.src);
-  img.setAttribute("alt", "maria nelly lopez image");
-  img.setAttribute("width", "145px");
-  img.setAttribute("height", "145px");
-
-  const div = document.createElement("div");
-  div.className = 'divImgPhoto';
-
-  parentDiv.appendChild(div);
-  div.appendChild(img);
-
-};
- */
-
