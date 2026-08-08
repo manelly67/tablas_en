@@ -3,6 +3,8 @@ import { toggleButton } from "./toggleButton";
 import { content_EN } from "./content_ES";
 import { insertImg } from "./insertImage";
 import { footerDiv } from "./footerDiv";
+import { addCoffeetea } from "./coffeeteaDiv";
+
 
 function homepage() {
   const root = document.documentElement;
@@ -39,6 +41,7 @@ function homepage() {
   );
 
   footerDiv(content);
+  addCoffeetea(content);
 
 }
 
