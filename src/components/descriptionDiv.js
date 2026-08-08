@@ -9,7 +9,7 @@ function description(parentDiv) {
 
   for (let i = 0; i < arrayProjects.length; i++) {
     const project = document.createElement("article");
-    project.setAttribute("id", `langES`);
+    project.setAttribute("id", `langEN`);
     project.className = "divForModules";
     div.appendChild(project);
   }
@@ -91,10 +91,10 @@ function description(parentDiv) {
             divRenglon.appendChild(renglon);
           });
 
-          description4.textContent = "RENOVACIONES años siguientes";
+          description4.textContent = arrayProjects[0]["projectDescription4_array"][5];
           insertRenovaciones(divD);
 
-          if (x.getAttribute("id") === "langES") {
+          if (x.getAttribute("id") === "langEN") {
             x.classList.add("show");
           } else {
             x.classList.add("hide");

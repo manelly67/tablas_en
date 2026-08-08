@@ -1,7 +1,7 @@
 import { Contenido } from "./class-content";
 import { name } from "./personalInfo";
 
-const project1 = new Contenido("langEn");
+const project1 = new Contenido("langEN");
 
 project1.titleAbout = "Spreadsheets for small business management"; // Hojas de cálculo
 project1.middleContent = [
@@ -12,7 +12,10 @@ project1.textContentAbout =
   "I developed a management system in Google Sheets that helps control the main areas of the business. No monthly subscription and no technical knowledge required. It uses dynamic and structured tables to automatically generate summaries by month, year, categories, and various parameters. Advanced formulas such as QUERY, FILTER, INDEX, MATCH, and VLOOKUP are implemented to extract and consolidate complex data on specific request, ensuring accuracy and speed in the analysis. A custom menu with functions designed in Google Apps Script is included to automate repetitive tasks or make the tool easier to use for people without technical knowledge.";
 project1.subtitle1 = "Structured design through modules";
 project1.headContactMe = "Contact me";
-project1.textContactMe = `I am ${name}, if you want a design for yourself, get in touch with me. Write directly to the email`;
+project1.textContactMe = [
+`I am ${name}, if you want a design for yourself, get in touch with me. Write directly to the email`,
+'or through LinkedIn',
+];
 project1.projectName = "";
 project1.projectDescription1 = "Management for PRODUCER";
 
@@ -93,6 +96,7 @@ project1.projectDescription4_array = [
     "Comprehensive Management System",
     "Free charts",
   ],
+  'RENEWALS for subsequent years',
 ];
 
 project1.language = "english";

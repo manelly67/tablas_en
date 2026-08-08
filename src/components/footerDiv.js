@@ -15,10 +15,10 @@ function footerDiv(parentDiv) {
     const contactMeText = document.createElement("p");
     contactMeText.setAttribute("id", 'f2');
     contactMeHeading.textContent = arrayProjects[0].headContactMe;
-    contactMeText.textContent = arrayProjects[0].textContactMe;
+    contactMeText.textContent = arrayProjects[0]['textContactMe'][0];
     contactMeText.insertAdjacentHTML(
             "beforeend",
-            `<span class="spanEmail"> ${email} </span> <p> o por linkedin. </p>`,
+            `<span class="spanEmail"> ${email} </span> <p> ${arrayProjects[0]['textContactMe'][1]} </p>`,
           );
 
      // icons

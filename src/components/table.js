@@ -35,7 +35,7 @@ function insertTable(parentDiv) {
   const thPrecio = document.createElement("th");
   thPrecio.textContent = "us$";
   const thObsequio = document.createElement("th");
-  thObsequio.textContent = "gráficos de obsequio";
+  thObsequio.textContent = arrayProjects[0]["projectDescription4_array"][4][5];
 
   trHead.append(thVacio, thPrecio, thObsequio);
   thead.appendChild(trHead);
@@ -75,7 +75,7 @@ function insertTable(parentDiv) {
   const trCompleta = document.createElement("tr");
   trCompleta.className = "fila-completa";
   const tdCompletaModulo = document.createElement("td");
-  tdCompletaModulo.textContent = "Sistema de Gestión Completo";
+  tdCompletaModulo.textContent = arrayProjects[0]["projectDescription4_array"][4][4];
   const tdCompletaPrecio = document.createElement("td");
   tdCompletaPrecio.textContent = gestion_productor;
   const tdCompletaObsequio = document.createElement("td");

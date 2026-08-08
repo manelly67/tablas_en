@@ -1,5 +1,5 @@
 .light {
-  --color-bg-first: #e9e7db;
+  --color-bg-first: #D8DCD6;
   --color-bg-second: #10169f;  
   --color-base-text: #57690b; 
   --color-a-hover: #414e01;    
@@ -12,7 +12,7 @@
 }
 
 .dark {
-  --color-bg-first: #263201;
+  --color-bg-first: #404040;
   --color-bg-second: #0a0b5c;
   --color-base-text: #97968e;
   --color-a-hover: #849E00;

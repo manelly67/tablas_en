@@ -7,7 +7,7 @@ class Contenido {
     this.arrayAbout = [];
     this.subtitle1 = '';
     this.headContactMe = '';
-    this.textContactMe = '';
+    this.textContactMe = [];
     this.projectName = '';
     this.projectDescription1 = '';
     this.projectDescription1_array = [];
