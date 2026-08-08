@@ -1,5 +1,6 @@
 .light {
   --color-bg-first: #e9e7db;
+  --color-bg-second: #10169f;  
   --color-base-text: #57690b; 
   --color-a-hover: #414e01;    
   --color-text-button: #e9e7db;
@@ -12,6 +13,7 @@
 
 .dark {
   --color-bg-first: #263201;
+  --color-bg-second: #0a0b5c;
   --color-base-text: #97968e;
   --color-a-hover: #849E00;
   --color-text-button: #e9e7db;
@@ -72,10 +74,10 @@ a {
   justify-content: center;
 }
 
+
 section {
   width: 95%;
   height: fit-content;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -203,6 +205,7 @@ section {
 /* content style */
 
 section > article {
+ 
   display: flex;
   flex-direction: column;
   gap: 1rem;
@@ -450,4 +453,117 @@ footer > section > div {
   justify-content: center;
   gap: 10px;
   padding-top: 2rem;
+}
+
+.tabla-precios {
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+.tabla-precios th,
+.tabla-precios td {
+  padding: 4px 8px;
+}
+
+/* Alinear números (precio y obsequio) a la derecha */
+.tabla-precios td:nth-child(2),
+.tabla-precios td:nth-child(3),
+.tabla-precios th:nth-child(2),
+.tabla-precios th:nth-child(3) {
+  text-align: right;
+}
+
+/* Módulo alineado a la izquierda */
+.tabla-precios td:first-child {
+  text-align: left;
+}
+
+/* Borde superior antes del total (como en la imagen) */
+.tabla-precios .fila-total td {
+  border-top: 1px solid #000;
+  padding-bottom: 50px;
+}
+
+.tabla-renovaciones {
+  border-collapse: collapse;
+  font-size: 1.2rem;
+}
+
+.tabla-renovaciones th,
+.tabla-renovaciones td {
+  padding: 4px 8px;
+}
+
+.tabla-renovaciones td:nth-child(2),
+.tabla-renovaciones th:nth-child(2) {
+  text-align: right;
+}
+
+.tabla-renovaciones td:first-child {
+  text-align: left;
+}
+
+
+.coffeetea-div {
+  width: 95%;
+  display: flex;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.coffeetea-div > div {
+  max-width: 290px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border-radius: 6px;
+  box-shadow: var(--color-shadow) 2px 2px 4px 2px;
+  padding: 20px 40px 20px 40px;
+  background-color: var(--color-bg-second);
+  color: var(--color-text-button);
+}
+
+.coffeetea-enlace {
+  display: inline-block;
+  max-width: 280px;
+  text-align: right;
+  padding-bottom: 20px;
+  padding-right: 5px;
+}
+
+.descripcion-sistema {
+  text-align: left;
+}
+
+.descripcion-sistema > p {
+  margin: 10px 0;
+}
+
+.descripcion-sistema > ol.lista-principal {
+  list-style-position: outside;
+  padding-left: 20px;
+  margin: 0;
+  font-size: 1.1rem;
+}
+
+.descripcion-sistema > ol.lista-principal > li {
+  margin-bottom: 15px;
+}
+
+.descripcion-sistema > ol.lista-principal > li > p {
+  margin: 5px 0 5px 0;
+}
+
+.descripcion-sistema ul {
+  list-style-position: outside;
+  padding-left: 25px;
+  margin: 10px 0 5px 0;
+}
+
+.descripcion-sistema ul li {
+  margin-bottom: 4px;
+}
+
+.descripcion-sistema > p {
+  font-size: 1rem;
 }
