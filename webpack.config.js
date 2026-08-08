@@ -12,7 +12,7 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Maria Nelly Lopez: Google Drive Spreadsheet Design',
+      title: 'Maria Nelly Lopez: Management tool in Google Sheets',
     }),
   ],
   output: {
