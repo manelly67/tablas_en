@@ -1,16 +1,23 @@
 import { arrayProjects } from "../assets/text-content";
 import { description } from "./descriptionDiv";
+import { aboutDiv } from "./aboutDiv";
 
 const content_EN = (arg) => {
   const content = document.createElement("article");
   const title = document.createElement("h1");
   title.textContent = arrayProjects[0]['titleAbout'];
-    
+
+  const middle = document.createElement("div");
+  middle.className = "hook";
+  const textMiddle = document.createElement("p");
+  textMiddle.textContent = arrayProjects[0]['middleContent'][0];
+  const textMiddle2 = document.createElement("p");
+  textMiddle2.textContent = arrayProjects[0]['middleContent'][1];
 
   const firstParr = document.createElement("div");
   firstParr.className = "firstParr";
-  const txt1 = document.createElement("p");
-  txt1.textContent = arrayProjects[0]['textContentAbout'];
+  
+  aboutDiv(firstParr);
     
   const subtitle1 = document.createElement("h2");
   subtitle1.className= "subtitle";
@@ -18,10 +25,11 @@ const content_EN = (arg) => {
 
   arg.appendChild(content);
   content.appendChild(title);
+  content.appendChild(middle);
   content.appendChild(firstParr);
-  firstParr.appendChild(txt1);
-  
-
+  middle.appendChild(textMiddle);
+  middle.appendChild(textMiddle2);
+ 
   const divForParr = document.createElement("div");
   divForParr.className = "centered";
   
@@ -38,6 +46,7 @@ const content_EN = (arg) => {
   });
  content.appendChild(divForHook);
   
+ 
 
 }
 
