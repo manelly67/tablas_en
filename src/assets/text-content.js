@@ -1,69 +1,94 @@
 import { Contenido } from "./class-content";
 import { name } from "./personalInfo";
-import { email } from "./personalInfo";
 
-const project1 = new Contenido('langES');
-project1.titleAbout = 'Tables for managing small businesses';  // Hojas de cálculo
-project1.textContentAbout = 'Design of spreadsheets in Google Sheets using dynamic and structured tables to generate automatic consolidations by month, year, category, and various parameters. Advanced formulas such as QUERY, FILTER, INDEX, MATCH, and VLOOKUP are implemented to extract and consolidate complex data based on specific requests, ensuring accuracy and efficiency in analysis.';
-project1.subtitle1 = 'Modular design';
-project1.headContactMe = 'Contact me';
-project1.textContactMe = `My name is ${name}, If you'd like a custom design, please contact me. Send me an email directly`;
-project1.projectName = '';
-project1.projectDescription1 =
-  'Sales Module';
-project1.projectDescription1_array = [
-  'Base table with a list of products, prices, and features.',
-  'Sales Details Data Entry Table.',
-  'Data validation and appendix for the daily reconciliation.',
-  'Consolidated report by month, by product, by sales channel, and by parameters as requested.',
+const project1 = new Contenido("langEn");
+
+project1.titleAbout = "Spreadsheets for small business management"; // Hojas de cálculo
+project1.middleContent = [
+  "Do you really know how much you earn each month?",
+  "Many small businesses sell every day, but don't know their real profits",
 ];
-project1.projectDescription2 =
-  'Expense Module';
-project1.projectDescription2_array = [
-  'Data entry table for expense details.',
-  'Base table with expense categories.',
-  'Appendix on Labor.',
-  'Consolidated report by month, category, supplier, and custom parameters.',
-];
-project1.projectDescription3 =
-  'Cost Module';
+project1.textContentAbout =
+  "I developed a management system in Google Sheets that helps control the main areas of the business. No monthly subscription and no technical knowledge required. It uses dynamic and structured tables to automatically generate summaries by month, year, categories, and various parameters. Advanced formulas such as QUERY, FILTER, INDEX, MATCH, and VLOOKUP are implemented to extract and consolidate complex data on specific request, ensuring accuracy and speed in the analysis. A custom menu with functions designed in Google Apps Script is included to automate repetitive tasks or make the tool easier to use for people without technical knowledge.";
+project1.subtitle1 = "Structured design through modules";
+project1.headContactMe = "Contact me";
+project1.textContactMe = `I am ${name}, if you want a design for yourself, get in touch with me. Write directly to the email`;
+project1.projectName = "";
+project1.projectDescription1 = "Management for PRODUCER";
+
+project1.projectDescription2 = "Management for SELLER";
+
+project1.projectDescription3 = "The price includes";
 project1.projectDescription3_array = [
-  'Base table with unit prices for materials.',
-  'Built-in formula tables that allow you to calculate the cost of materials for each product based on specified parameters and set a suggested retail price.',
-  'Total raw material cost calculator based on products sold. (Requires the Sales module)',
-];
-project1.projectDescription4 =
-  'Consolidated Management Module';
-project1.projectDescription4_array = [
-  'This requires at least the sales module and the expenses module to be installed beforehand.',
-  'A spreadsheet designed to display monthly and year-to-date management results.',
+  "Customization",
+  "A one-hour training session",
+  "WhatsApp support for one month",
 ];
 
 project1.projectDescription5_array = [
-  'In all modules, the information is automatically updated with each data entry.',
-  'Reusable for future years.',
-  "Tailored to each client's needs",
+  "In all modules, information updates automatically with each data entry.",
+  "Adapted to each client's needs",
 ];
 
-project1.projectDescription6 =
-  'Dashboards and Scripts';
-project1.projectDescription6_array = [
-  'Dashboard from','with four charts.',
-  'Custom scripts written in Google Apps Script for repetitive or specific tasks, starting at', 'depending on the complexity.',
+project1.arrayAbout = [
+  "📊 Design of a management system in Google Sheets that shows, month by month, how much the business really sells, how much it costs to sell, how much it spends, and what its financial result is. No monthly subscription and no technical knowledge required",
+  "📁 Contains:",
+  [
+    "🗂️ Product catalog",
+    ["✅ Customizable.", "✅ Can be used by merchants or manufacturers."],
+  ],
+  [
+    "💰 Sales management",
+    [
+      "📝 Sales record.",
+      "🛒 Sales channel.",
+      "⚙️ Additional configurable parameter.",
+      "🔄 Automatic consolidation using pivot tables.",
+    ],
+  ],
+  [
+    "🧮 Sales costing",
+    "Automatically calculates the cost of what was sold.",
+    [
+      "🏬 Trading companies → uses the purchase price.",
+      "🏭 Manufacturing companies → uses the production cost.",
+    ],
+  ],
+  [
+    "💸 Expense management",
+    [
+      "📝 Expense record.",
+      "🏷️ Free classification by the user (expense category, suppliers).",
+      "🧾 Management classification defined by the system.",
+    ],
+  ],
+  [
+    "Management income statement",
+    "Automatically integrates:",
+    [
+      "💵 Sales",
+      "📦 Cost of sales",
+      "👷 Labor",
+      "🏗️ Depreciation",
+      "🗃️ Administrative expenses",
+      "📣 Selling expenses",
+    ],
+    "✨ To show the business's financial result.",
+  ],
+  [
+    "🤖 A custom menu with functions designed in Google Apps Script is included to automate repetitive tasks or make the tool easier to use for people without technical knowledge.",
+  ],
+];
+// additional information
+project1.projectDescription4_array = [
+  'Try this free website to control your expenses',
+  'Consolidated management module',
+  'Individual modules',
+  'One-time purchase of the cost module, no renewal required.'
 ];
 
-project1.projectDescription7 =
-  'Administrative Support or Improvement Support';
-project1.projectDescription7_array = [
-  'less than 5 hours, at ','per hour',
-  'More than 5 hours in a week at','per hour',
-];
+project1.language = "español";
 
-
-project1.language = 'english';
-
-const arrayProjects = [
-  project1
-];
+const arrayProjects = [project1];
 
 export { arrayProjects };
