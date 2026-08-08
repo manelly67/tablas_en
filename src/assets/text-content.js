@@ -81,13 +81,21 @@ project1.arrayAbout = [
 ];
 // additional information
 project1.projectDescription4_array = [
-  'Try this free website to control your expenses',
-  'Consolidated management module',
-  'Individual modules',
-  'One-time purchase of the cost module, no renewal required.'
+  "Try this free website to control your expenses",
+  "Consolidated management module",
+  "Individual modules",
+  "One-time purchase of the cost module, no renewal required.",
+  [
+    "Sales Module",
+    "Expenses Module",
+    "Costs Module",
+    "Consolidated Management Module",
+    "Comprehensive Management System",
+    "Free charts",
+  ],
 ];
 
-project1.language = "español";
+project1.language = "english";
 
 const arrayProjects = [project1];
 
