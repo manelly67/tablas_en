@@ -14,7 +14,7 @@ project1.subtitle1 = "Structured design through modules";
 project1.headContactMe = "Contact me";
 project1.textContactMe = [
 `I am ${name}, if you want a design for yourself, get in touch with me. Write directly to the email`,
-'or through LinkedIn',
+'or through',
 ];
 project1.projectName = "";
 project1.projectDescription1 = "Management for PRODUCER";

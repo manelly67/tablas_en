@@ -5,6 +5,9 @@ import { insertImg } from "./insertImage";
 
 function linkedinDiv(parentDiv) {
 
+    const div = document.createElement("div");
+    div.className = "displayInRow";
+
     const linkedinLink = document.createElement("a");
     linkedinLink.setAttribute("href", linkedin);
     linkedinLink.setAttribute("target", "_blank");
@@ -20,8 +23,12 @@ function linkedinDiv(parentDiv) {
         "30px"
     );
 
-
-    parentDiv.appendChild(linkedinLink);
+    const text = document.createElement("p");
+    text.textContent = linkedin;
+       
+    parentDiv.appendChild(div);
+    div.appendChild(linkedinLink);
+    div.appendChild(text);
 
 };
 

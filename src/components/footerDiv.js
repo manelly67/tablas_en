@@ -1,6 +1,7 @@
 import photo_MN from "../assets/photo-footer.png";
 import { arrayProjects } from "../assets/text-content";
 import { linkedinDiv } from "./linkedinDiv";
+import { whatsappDiv } from "./whatsappDiv";
 import { email } from "../assets/personalInfo";
 import { insertImg } from "./insertImage";
 
@@ -23,7 +24,9 @@ function footerDiv(parentDiv) {
 
      // icons
     const contactMeIcons = document.createElement("div");
+    contactMeIcons.className = "divIconsFooter";
     linkedinDiv(contactMeIcons);
+    whatsappDiv(contactMeIcons);
 
     // image
     const mn_image = new Image();
